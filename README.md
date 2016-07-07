@@ -1,24 +1,34 @@
-# README
+## Welcome to Gonner
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an alternative to parse. Just add water (rails g model) and let it be a full RESTful app.
 
-Things you may want to cover:
+You can customize with your routes, controllers, serialization, etc,.
 
-* Ruby version
+## Getting Started
 
-* System dependencies
 
-* Configuration
+From source code:
 
-* Database creation
+```
+git clone git@github.com:vgsantoniazzi/gonner.git my_app
+```
 
-* Database initialization
+## Usage
 
-* How to run the test suite
+```
+rails g model car color:string year:integer
+rails s
+curl http://localhost:3000/api/v1/car # RESTful API
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Contributing
 
-* Deployment instructions
+I :heart: Open source!
 
-* ...
+[Follow github guides for forking a project](https://guides.github.com/activities/forking/)
+
+[Follow github guides for contributing open source](https://guides.github.com/activities/contributing-to-open-source/#contributing)
+
+## License
+
+Gem is released under the [MIT license](http://opensource.org/licenses/MIT).
